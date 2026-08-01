@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  VITE_SERVER_URL = "https://bomb-lights-log-brave.trycloudflare.com"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
